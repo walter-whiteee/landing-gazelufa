@@ -501,6 +501,22 @@ header {
     text-decoration: none;
 }
 
+/* Переопределяем синий системный цвет iOS для tel-ссылок */
+a[href^="tel"] {
+    -webkit-text-fill-color: var(--accent);
+    color: var(--accent) !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 107, 53, 0.5);
+    text-underline-offset: 3px;
+}
+
+/* Кнопки-ссылки не должны быть подчёркнуты */
+a[href^="tel"].cta-button {
+    -webkit-text-fill-color: white;
+    color: white !important;
+    text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 32px; }

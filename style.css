@@ -48,6 +48,60 @@ header {
 
 .phone-header:hover { color: var(--accent); }
 
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wa-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #25d366;
+    border-radius: 50%;
+    font-size: 15px;
+    text-decoration: none !important;
+    -webkit-text-fill-color: initial;
+    color: white !important;
+    flex-shrink: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wa-icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.45);
+}
+
+.hero-phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.phone-large-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.phone-large-row .phone-large {
+    display: inline;
+    margin: 0;
+    font-size: 38px;
+}
+
+.wa-icon-lg {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+}
+
 .hero {
     background: linear-gradient(135deg, rgba(26, 60, 94, 0.92), rgba(42, 125, 79, 0.88)), url('assets/img_1.png') center/cover no-repeat;
     color: white;
